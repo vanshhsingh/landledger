@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montserrat&family=Sacramento&display=swap");
+:root{
+    font-family: "Merriweather Sans", sans-serif;
+}
+.Search{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 6em;
+    color: white;
+    /* align-items: center; */
+    font-weight: bold;
+    font-size: 2em;
+    margin: 3.11em 2em;
+
+}
+.Search p{
+    width: 18em;
+}
+.Search::before{
+    content: "";
+    background: url('../img/BackgroundImg.jpg') no-repeat center/cover;
+    position: absolute;
+    height: 50%;
+    top: 2.2em;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.88;
+}
+.searchBar{
+    opacity: 90%;
+}
+.searchBar input{
+    height: 2em;
+    width: 25em;
+    border-style: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px 20px;
+}
+.searchBar button{
+    height: 3.5em;
+    border-style: none;
+    background-color: rgb(187, 187, 187);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 0px 20px;
+    transition: 0.5s;
+}
+.searchBar button:hover{
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+
+.features{
+    display: flex;
+    text-align: center;
+}
+.features .box{
+    border-radius: 20px;
+    margin: 10px;
+    padding: 50px 10px;
+    background-color: rgb(238, 238, 238);
+}
+.features .box img{
+    display: block;
+    height: 200px;
+    margin: auto;
+}
+
+.features .box p{
+    font-family: "Baloo Bhai 2", serif;
+    
+}
+
