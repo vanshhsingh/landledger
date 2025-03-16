@@ -20,10 +20,10 @@ body {
 .container {
     background-color: var(--nav-color);
     font-size: 1.2rem;
-    font-family: "Merriweather Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
     height: 70px;
     align-items: center;
-    position: sticky;
+    /* position: sticky; */
     top: 0px;
 }
 
@@ -62,4 +62,8 @@ body {
   
 .navbar a:hover {
     color: var(--secondary-color);
+}
+
+#homebutt{
+    font-size: larger;
 }

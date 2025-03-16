@@ -1,21 +1,23 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
+import "../../css/Navbar.css";
 
-import '../../css/Navbar.css'
 export default function Navbar() {
   return (
     <div className="container">
-    <div className="navbar">
-        <h2>LandLedger</h2>
+      <div className="navbar">
+        <a href="/" id="homebutt">LandLedger</a>
         <nav>
-            <ul>
-                <li><a href="#">Buy</a></li>
-                <li><a href="#">Rent</a></li>
-                <li><a href="#">Home Loans</a></li>
-                <li><a href="#">Find an Agent</a></li>
-            </ul>
+          <ul>
+            <li><Link to="/buy">Buy</Link></li>
+            <li><Link to="/sell">Sell</Link></li>
+            <li><Link to="/loans">Marketplace</Link></li>
+            <li><Link to="/wishlist">Wishlist</Link></li>
+            <li><Link to="/listings">My Listings</Link></li>
+            <li><Link to="/profile">Profile</Link></li>
+          </ul>
         </nav>
+      </div>
     </div>
-    </div>
-  )
+  );
 }
-

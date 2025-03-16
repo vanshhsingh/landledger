@@ -12,21 +12,32 @@
     font-weight: bold;
     font-size: 2em;
     margin: 3.11em 2em;
-
+    /* overflow: hidden; */
 }
-.Search p{
+@keyframes slideFadeIn {
+    to {
+        left: 0; /* Slide to its final position */
+        opacity: 1; /* Fade in to fully visible */
+    }
+}
+.Search h1{
     width: 18em;
+    position: relative;
+    left: -100px; /* Start off-screen to the left */
+    opacity: 0; /* Start fully transparent */
+    animation: slideFadeIn 1s ease-in-out forwards; /* Apply animation */
+    white-space: nowrap; /* Prevent text from wrapping */
 }
 .Search::before{
     content: "";
-    background: url('../img/BackgroundImg.jpg') no-repeat center/cover;
+    background: url('../img/street-4942809_1920.jpg') no-repeat center/cover;
     position: absolute;
     height: 50%;
     top: 2.2em;
     left: 0px;
     width: 100%;
     z-index: -1;
-    opacity: 0.88;
+    opacity: 0.86;
 }
 .searchBar{
     opacity: 90%;
@@ -38,6 +49,11 @@
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     padding: 10px 20px;
+    position: relative;
+    left: -100px; /* Start off-screen to the left */
+    opacity: 0; /* Start fully transparent */
+    animation: slideFadeIn 1s ease-in-out forwards; /* Apply animation */
+    white-space: nowrap; /* Prevent text from wrapping */
 }
 .searchBar button{
     height: 3.5em;
@@ -47,6 +63,11 @@
     border-bottom-right-radius: 10px;
     padding: 0px 20px;
     transition: 0.5s;
+    position: relative;
+    left: -100px; /* Start off-screen to the left */
+    opacity: 0; /* Start fully transparent */
+    animation: slideFadeIn 1s ease-in-out forwards; /* Apply animation */
+    white-space: nowrap; /* Prevent text from wrapping */
 }
 .searchBar button:hover{
     background-color: rgb(255, 255, 255);
@@ -62,7 +83,7 @@
     border-radius: 20px;
     margin: 10px;
     padding: 50px 10px;
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(255, 255, 255);
 }
 .features .box img{
     display: block;

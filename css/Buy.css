@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montserrat&family=Sacramento&display=swap");
+@import url('https://fonts.cdnfonts.com/css/verdana');
+input:focus {
+    outline: none;
+    border: none;
+}
+body{
+    background-color:#E8E8E8 ;
+}
+.search-buy{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+
+}
+
+.searchBar-buy{
+    opacity: 100%;
+    border: solid rgb(187, 187, 187) 1.2px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+.searchBar-buy input{
+    height: 0.7em;
+    width: 25em;
+    padding: 10px 20px;
+    border-style: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.searchBar-buy button{
+    height: 2.5em;
+    background-color: rgb(187, 187, 187);
+    padding: 0px 20px;
+    transition: 0.5s;
+    border-style: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+.searchBar-buy button:hover{
+    background-color: rgb(158, 158, 158);
+    transition: 0.5s;
+}
+
+.Navbar-buy{
+    display: flex;
+}
+.Navbar-buy button{
+    margin: 0px 10px;
+}
+
+.Gridbuy {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .PropertyGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  .PropertyCard {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .PropertyCard:hover {
+    transform: scale(1.05);
+  }
+  
+  .PropertyImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .PropertyInfo {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .PropertyInfo h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .location {
+    font-size: 0.9rem;
+    color: gray;
+  }
+  
+  .price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  .details {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .view-btn {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .view-btn:hover {
+    background: #b1b1b1;
+  }
+  .Navbar-buy {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropbtn {
+    background: #1E90FF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .dropbtn:hover {
+    background: #b1b1b1;
+  }
+  
+  .dropdown-content {
+    display: block;
+    position: absolute;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    min-width: 160px;
+    z-index: 1000;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .dropdown-content button {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    border: none;
+    background: white;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .dropdown-content button:hover {
+    background: #f1f1f1;
+  }
+  .listing-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.listing-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+.listing-card .view-details {
+    background-color: #1E90FF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Verdana', sans-serif;
+    font-weight: bold;
+}
+.listing-card .view-details:hover {
+  background-color: #4682B4;
+}
+/* Property Titles */
+.listing-card h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Prices */
+.listing-card .price {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #1E90FF; /* Accent blue */
+}
+
+
+/* Hover Effect */
+.listing-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.Buy {
+  opacity: 0;
+  transform: translateY(20px); /* Slide up from 20px below */
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.Buy.loaded {
+  opacity: 1;
+  transform: translateY(0); /* Slide up to original position */
+}

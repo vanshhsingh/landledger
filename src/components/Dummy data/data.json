@@ -1,0 +1,83 @@
+[
+    {
+      "id": 1,
+      "name": "Luxury Apartment in Mumbai",
+      "location": "Thane, Mumbai",
+      "price": "₹2.5 Cr",
+      "type": "Apartment",
+      "size": "1500 sq.ft",
+      "bedrooms": 3,
+      "bathrooms": 3
+    },
+    {
+      "id": 2,
+      "name": "Cozy 2BHK in Bangalore",
+      "location": "Indiranagar, Bangalore",
+      "price": "₹85 Lakh",
+      "type": "Apartment",
+      "size": "1200 sq.ft",
+      "bedrooms": 2,
+      "bathrooms": 2
+    },
+    {
+      "id": 3,
+      "name": "Villa with Garden in Pune",
+      "location": "Koregaon Park, Pune",
+      "price": "₹1.8 Cr",
+      "type": "Villa",
+      "size": "2200 sq.ft",
+      "bedrooms": 4,
+      "bathrooms": 4
+    },
+    {
+      "id": 4,
+      "name": "Budget Flat in Noida",
+      "location": "Sector 137, Noida",
+      "price": "₹45 Lakh",
+      "type": "Apartment",
+      "size": "900 sq.ft",
+      "bedrooms": 2,
+      "bathrooms": 1
+    },
+    {
+      "id": 5,
+      "name": "Independent House in Chennai",
+      "location": "Adyar, Chennai",
+      "price": "₹1.3 Cr",
+      "type": "Independent House",
+      "size": "1800 sq.ft",
+      "bedrooms": 3,
+      "bathrooms": 3
+    },
+    {
+      "id": 6,
+      "name": "Luxury Penthouse in Hyderabad",
+      "location": "Banjara Hills, Hyderabad",
+      "price": "₹3 Cr",
+      "type": "Penthouse",
+      "size": "2500 sq.ft",
+      "bedrooms": 4,
+      "bathrooms": 4
+    },
+    {
+      "id": 7,
+      "name": "Affordable Studio in Gurgaon",
+      "location": "DLF Phase 3, Gurgaon",
+      "price": "₹35 Lakh",
+      "type": "Studio Apartment",
+      "size": "600 sq.ft",
+      "bedrooms": 1,
+      "bathrooms": 1
+    },
+    {
+      "id": 8,
+      "name": "Premium 4BHK in Kolkata",
+      "location": "Salt Lake City, Kolkata",
+      "price": "₹2 Cr",
+      "type": "Apartment",
+      "size": "2000 sq.ft",
+      "bedrooms": 4,
+      "bathrooms": 4
+    }
+  ]
+  
