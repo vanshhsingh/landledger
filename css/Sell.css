@@ -1,0 +1,27 @@
+.Sell {
+    text-align: center;
+    padding: 50px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.Sell.loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.list-property-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.list-property-btn:hover {
+    background-color: #218838;
+}

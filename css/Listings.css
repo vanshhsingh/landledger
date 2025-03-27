@@ -1,0 +1,19 @@
+.Listings {
+    text-align: center;
+    padding: 50px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.Listings.loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.listings-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}

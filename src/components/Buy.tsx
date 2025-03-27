@@ -96,9 +96,9 @@ export default function Buy() {
           <section className="Gridbuy">
             <div className="PropertyGrid">
               {properties.map((property) => (
-                <div key={property.id} className="PropertyCard">
+                // <div key={property.id} className="PropertyCard">
                   
-                  <div className="listing-card">
+                  <div key={property.id} className="listing-card">
                   <img 
                     src="img\houseimage.jpg" 
                     alt={property.name} 
@@ -112,7 +112,7 @@ export default function Buy() {
                         View Details
                       </button>
                   </div>
-                </div>
+                // </div>
               ))}
             </div>
           </section>

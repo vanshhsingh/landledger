@@ -20,6 +20,13 @@
         opacity: 1; /* Fade in to fully visible */
     }
 }
+
+.Home{
+    position: absolute;
+     top: 0;
+     width: 100%;
+}
+
 .Search h1{
     width: 18em;
     position: relative;
@@ -33,7 +40,6 @@
     background: url('../img/street-4942809_1920.jpg') no-repeat center/cover;
     position: absolute;
     height: 50%;
-    top: 2.2em;
     left: 0px;
     width: 100%;
     z-index: -1;

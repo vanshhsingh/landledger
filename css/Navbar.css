@@ -1,69 +1,212 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montserrat&family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 
 :root {
-    --nav-color: #000000;
-    --nav-text: #fff;
+    --nav-color: rgba(0,0,0,0.4);
+    --nav-text: #ffffff;
     --primary-color: #ffffff;
-    --secondary-color: #abc4aa;
-
+    --secondary-color: #007bff; /* Blue color for Signup */
+    --hover-color: #0056b3;
+    --font-family: 'Montserrat', sans-serif;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
+
 body {
     background-color: var(--primary-color);
-    /* padding: 0px; */
-    margin: 0px;
+    margin: 0;
+    font-family: var(--font-family);
 }
 
-
+/* Navbar Container */
 .container {
     background-color: var(--nav-color);
-    font-size: 1.2rem;
-    font-family: "Roboto", sans-serif;
-    height: 70px;
+    height: 50px;
+    position: fixed;
+    display: flex;
     align-items: center;
+    justify-content: center;
     /* position: sticky; */
+    width: 100%;
     top: 0px;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    backdrop-filter: blur(5px); /* Blur effect */
+    -webkit-backdrop-filter: blur(5px); /* Safari support */
+    padding: 10px 20px; /* Add some padding */
 }
 
+/* Navbar Content */
 .navbar {
     display: flex;
     align-items: center;
-    height: 100%;
+    justify-content: space-between;
     width: 80%;
-    margin: auto;
     color: var(--nav-text);
 }
 
+/* Brand Logo */
+#homebutt {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--nav-text);
+    transition: transform 0.3s ease-in-out;
+}
+
+#homebutt:hover {
+    color: var(--secondary-color);
+    transform: scale(1.1);
+}
+
+/* Navigation Links */
 .navbar ul {
     display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
-
-.container .navbar {
-    justify-content: space-between;
-}
-
 
 .navbar ul li {
-    list-style-type: none;
+    margin: 0 15px;
 }
-  
-.container .navbar ul li {
-    padding: 10px;
-    margin: 0 10px;
-}
-  
+
 .navbar a {
     color: var(--nav-text);
-    font-weight: bold;
     text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
 }
-  
+
 .navbar a:hover {
     color: var(--secondary-color);
 }
 
-#homebutt{
-    font-size: larger;
+/* Auth Buttons */
+.auth-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+/* Login Button */
+.login-btn, .signup-btn , .logout-btn{
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-family: var(--font-family);
+    display: inline-block;
+}
+
+/* Animated Hover Effects */
+.login-btn {
+    background-color: transparent;
+    color: var(--nav-text);
+    border: 2px solid var(--nav-text);
+    position: relative;
+    overflow: hidden;
+}
+
+.login-btn::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--nav-text);
+    top: 0;
+    left: -100%;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+}
+
+.login-btn:hover {
+    color: var(--nav-color);
+}
+
+.login-btn:hover::after {
+    left: 0;
+}
+
+/* Signup Button with Gradient Effect */
+.signup-btn {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    border: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.signup-btn:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+/* ✅ Logout Button */
+.logout-btn {
+    background-color: transparent;
+    color: var(--nav-text);
+    border: 2px solid var(--nav-text);
+    position: relative;
+    overflow: hidden;
+    padding: 8px 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    border-radius: 25px;
+}
+
+/* ✅ Animated Background Effect */
+.logout-btn::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #dc3545; /* Red */
+    top: 0;
+    left: -100%;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+}
+
+/* ✅ Hover Effect */
+.logout-btn:hover {
+    color: white; /* Text changes to white */
+}
+
+.logout-btn:hover::after {
+    left: 0;
+}
+
+.auth-buttons li {
+    list-style: none;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .auth-buttons {
+        margin-top: 10px;
+    }
+
 }

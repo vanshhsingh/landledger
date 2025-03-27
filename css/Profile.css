@@ -1,0 +1,40 @@
+.Profile {
+    text-align: center;
+    padding: 50px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.Profile.loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.profile-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.avatar {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.edit-profile {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.edit-profile:hover {
+    background-color: #0056b3;
+}
