@@ -46,54 +46,54 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-4 text-white">Quick Links</h3>
             <ul className="space-y-2">
-              <li><Link href="/" className="text-gray-400 hover:text-white">Home</Link></li>
-              <li><Link href="/properties" className="text-gray-400 hover:text-white">Properties</Link></li>
-              <li><Link href="/services" className="text-gray-400 hover:text-white">Services</Link></li>
-              <li><Link href="/about" className="text-gray-400 hover:text-white">About Us</Link></li>
-              <li><Link href="/contact" className="text-gray-400 hover:text-white">Contact</Link></li>
+              <li><Link href="/" className="text-gray-300 hover:text-white transition-colors duration-200 flex items-center"><span className="w-1.5 h-1.5 rounded-full bg-primary mr-2"></span>Home</Link></li>
+              <li><Link href="/properties" className="text-gray-300 hover:text-white transition-colors duration-200 flex items-center"><span className="w-1.5 h-1.5 rounded-full bg-primary mr-2"></span>Properties</Link></li>
+              <li><Link href="/services" className="text-gray-300 hover:text-white transition-colors duration-200 flex items-center"><span className="w-1.5 h-1.5 rounded-full bg-primary mr-2"></span>Services</Link></li>
+              <li><Link href="/about" className="text-gray-300 hover:text-white transition-colors duration-200 flex items-center"><span className="w-1.5 h-1.5 rounded-full bg-primary mr-2"></span>About Us</Link></li>
+              <li><Link href="/contact" className="text-gray-300 hover:text-white transition-colors duration-200 flex items-center"><span className="w-1.5 h-1.5 rounded-full bg-primary mr-2"></span>Contact</Link></li>
             </ul>
           </div>
 
           {/* Services */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Services</h3>
+            <h3 className="text-lg font-semibold mb-4 text-white">Services</h3>
             <ul className="space-y-2">
-              <li><Link href="/services#property-management" className="text-gray-400 hover:text-white">Property Management</Link></li>
-              <li><Link href="/services#investment-advisory" className="text-gray-400 hover:text-white">Investment Advisory</Link></li>
-              <li><Link href="/services#buying-selling" className="text-gray-400 hover:text-white">Buying & Selling</Link></li>
-              <li><Link href="/services#market-analysis" className="text-gray-400 hover:text-white">Market Analysis</Link></li>
-              <li><Link href="/services#consultation" className="text-gray-400 hover:text-white">Consultation</Link></li>
+              <li><Link href="/services#property-management" className="text-gray-300 hover:text-white transition-colors duration-200 flex items-center"><span className="w-1.5 h-1.5 rounded-full bg-primary mr-2"></span>Property Management</Link></li>
+              <li><Link href="/services#investment-advisory" className="text-gray-300 hover:text-white transition-colors duration-200 flex items-center"><span className="w-1.5 h-1.5 rounded-full bg-primary mr-2"></span>Investment Advisory</Link></li>
+              <li><Link href="/services#buying-selling" className="text-gray-300 hover:text-white transition-colors duration-200 flex items-center"><span className="w-1.5 h-1.5 rounded-full bg-primary mr-2"></span>Buying & Selling</Link></li>
+              <li><Link href="/services#market-analysis" className="text-gray-300 hover:text-white transition-colors duration-200 flex items-center"><span className="w-1.5 h-1.5 rounded-full bg-primary mr-2"></span>Market Analysis</Link></li>
+              <li><Link href="/services#consultation" className="text-gray-300 hover:text-white transition-colors duration-200 flex items-center"><span className="w-1.5 h-1.5 rounded-full bg-primary mr-2"></span>Consultation</Link></li>
             </ul>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
-            <ul className="space-y-2 text-gray-400">
+            <h3 className="text-lg font-semibold mb-4 text-white">Contact Us</h3>
+            <ul className="space-y-3 text-gray-300">
               <li className="flex items-start">
-                <FontAwesomeIcon icon={faMapMarkerAlt} className="mt-1 mr-3 text-primary" />
+                <FontAwesomeIcon icon={faMapMarkerAlt} className="mt-1 mr-3 text-primary text-lg" />
                 <span>765 Park Avenue, Mumbai, Maharashtra 400001</span>
               </li>
               <li className="flex items-center">
-                <FontAwesomeIcon icon={faPhone} className="mr-3 text-primary" />
+                <FontAwesomeIcon icon={faPhone} className="mr-3 text-primary text-lg" />
                 <span>+91 98765 43210</span>
               </li>
               <li className="flex items-center">
-                <FontAwesomeIcon icon={faEnvelope} className="mr-3 text-primary" />
+                <FontAwesomeIcon icon={faEnvelope} className="mr-3 text-primary text-lg" />
                 <span>info@landledger.com</span>
               </li>
               <li className="flex items-center">
-                <FontAwesomeIcon icon={faClock} className="mr-3 text-primary" />
+                <FontAwesomeIcon icon={faClock} className="mr-3 text-primary text-lg" />
                 <span>Mon-Fri: 10AM - 6PM</span>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-gray-700 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} LandLedger. All rights reserved.</p>
+        <div className="mt-12 pt-8 border-t border-gray-700 text-center">
+          <p className="text-gray-300">&copy; {new Date().getFullYear()} <span className="font-semibold">LandLedger</span>. All rights reserved.</p>
         </div>
       </div>
     </footer>
