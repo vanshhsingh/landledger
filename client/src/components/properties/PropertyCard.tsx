@@ -11,7 +11,7 @@ import { Property } from "@shared/schema";
 interface PropertyCardProps {
   property: Property;
   onClick: () => void;
-  featured?: boolean;
+  featured?: boolean | null;
 }
 
 const PropertyCard = ({ property, onClick, featured }: PropertyCardProps) => {
@@ -81,9 +81,9 @@ const PropertyCard = ({ property, onClick, featured }: PropertyCardProps) => {
           </div>
         </div>
         <div className="mt-4">
-          <a href="#" className="text-primary font-medium hover:text-blue-700" onClick={(e) => e.preventDefault()}>
+          <button className="text-primary font-medium hover:text-blue-700 border-0 bg-transparent cursor-pointer p-0 flex items-center">
             View Details <FontAwesomeIcon icon={faArrowRight} className="ml-1" />
-          </a>
+          </button>
         </div>
       </div>
     </div>

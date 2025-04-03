@@ -83,7 +83,7 @@ const FeaturedProperties = () => {
               key={property.id} 
               property={property} 
               onClick={() => handlePropertyClick(property)}
-              featured={property.featured}
+              featured={property.featured || false}
             />
           ))}
 
@@ -95,10 +95,8 @@ const FeaturedProperties = () => {
         </div>
 
         <div className="mt-10 text-center">
-          <Link href="/properties">
-            <a className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-blue-700">
-              View All Properties
-            </a>
+          <Link href="/properties" className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-blue-700">
+            View All Properties
           </Link>
         </div>
       </div>
