@@ -1,8 +1,8 @@
-# EstateAdvisor - Real Estate Advisory & Management Platform
+# LandLedger - Real Estate Advisory & Management Platform for India
 
-EstateAdvisor is a comprehensive real estate platform designed to help users find properties, get expert real estate advice, and manage their real estate assets. This web application provides property listings, search functionality, and easy contact options for prospective clients.
+LandLedger is a comprehensive real estate platform designed specifically for the Indian market, helping users find properties, get expert real estate advice, and manage their real estate assets. This web application provides property listings, search functionality, and easy contact options for prospective clients throughout India.
 
-![EstateAdvisor Screenshot](https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80)
+![LandLedger Screenshot](https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80)
 
 ## Features
 
@@ -39,8 +39,8 @@ EstateAdvisor is a comprehensive real estate platform designed to help users fin
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/estate-advisor.git
-   cd estate-advisor
+   git clone https://github.com/yourusername/landledger.git
+   cd landledger
    ```
 
 2. Install dependencies:

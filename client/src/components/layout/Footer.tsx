@@ -23,7 +23,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center mb-4">
               <FontAwesomeIcon icon={faBuilding} className="text-primary text-2xl mr-2" />
-              <span className="text-xl font-bold">EstateAdvisor</span>
+              <span className="text-xl font-bold">LandLedger</span>
             </div>
             <p className="text-gray-400 mb-4">
               Professional real estate advisory and management services.
@@ -74,26 +74,26 @@ const Footer = () => {
             <ul className="space-y-2 text-gray-400">
               <li className="flex items-start">
                 <FontAwesomeIcon icon={faMapMarkerAlt} className="mt-1 mr-3 text-primary" />
-                <span>123 Main Street, New York, NY 10001</span>
+                <span>765 Park Avenue, Mumbai, Maharashtra 400001</span>
               </li>
               <li className="flex items-center">
                 <FontAwesomeIcon icon={faPhone} className="mr-3 text-primary" />
-                <span>(123) 456-7890</span>
+                <span>+91 98765 43210</span>
               </li>
               <li className="flex items-center">
                 <FontAwesomeIcon icon={faEnvelope} className="mr-3 text-primary" />
-                <span>info@estateadvisor.com</span>
+                <span>info@landledger.com</span>
               </li>
               <li className="flex items-center">
                 <FontAwesomeIcon icon={faClock} className="mr-3 text-primary" />
-                <span>Mon-Fri: 9AM - 5PM</span>
+                <span>Mon-Fri: 10AM - 6PM</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="mt-12 pt-8 border-t border-gray-700 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} EstateAdvisor. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} LandLedger. All rights reserved.</p>
         </div>
       </div>
     </footer>

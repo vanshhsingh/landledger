@@ -5,7 +5,9 @@ import {
   faHandshake, 
   faUserTie, 
   faAward,
-  faUsers
+  faUsers,
+  faChartLine,
+  faKey
 } from "@fortawesome/free-solid-svg-icons";
 import CallToAction from "../components/home/CallToAction";
 
@@ -56,10 +58,10 @@ const About = () => {
               <h2 className="text-3xl font-bold text-secondary">Our Story</h2>
               <div className="mt-6 space-y-4 text-gray-600">
                 <p>
-                  Founded in 2005, EstateAdvisor began with a simple mission: to provide honest, personalized real estate services that put clients' needs first. What started as a small team of passionate real estate professionals has grown into a trusted advisory firm serving hundreds of clients across the country.
+                  Founded in 2005, LandLedger began with a simple mission: to provide honest, personalized real estate services that put clients' needs first. What started as a small team of passionate real estate professionals has grown into a trusted advisory firm serving hundreds of clients across the country.
                 </p>
                 <p>
-                  Our founder, John Smith, recognized a gap in the market for truly client-focused real estate services. Too often, he saw clients receiving generic advice that didn't account for their unique circumstances and goals. EstateAdvisor was created to change that paradigm.
+                  Our founder, John Smith, recognized a gap in the market for truly client-focused real estate services. Too often, he saw clients receiving generic advice that didn't account for their unique circumstances and goals. LandLedger was created to change that paradigm.
                 </p>
                 <p>
                   Today, we continue to uphold our founding principles while expanding our services to meet the evolving needs of our clients. Our team of experienced professionals is dedicated to providing expert guidance and personalized solutions for all your real estate needs.
@@ -117,7 +119,7 @@ const About = () => {
       <section className="py-12 bg-neutral-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-3xl font-bold text-secondary">Why Choose EstateAdvisor</h2>
+            <h2 className="text-3xl font-bold text-secondary">Why Choose LandLedger</h2>
             <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
               We stand out from the competition with our unique approach and commitment to excellence.
             </p>

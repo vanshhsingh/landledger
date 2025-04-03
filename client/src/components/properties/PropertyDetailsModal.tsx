@@ -29,26 +29,33 @@ export const PropertyDetailsModal = ({ property, isOpen, onClose }: PropertyDeta
     location,
     price,
     image,
-    images = [],
+    images,
     bedrooms,
     bathrooms,
     area,
     description,
-    features = []
+    features
   } = property;
+  
+  // Ensure images and features are arrays
+  const propertyImages = images || [];
+  const propertyFeatures = features || [];
 
-  const formattedPrice = new Intl.NumberFormat('en-US', {
+  // Convert USD to INR (approximation - 1 USD = 75 INR)
+  const inrPrice = price * 75;
+  
+  const formattedPrice = new Intl.NumberFormat('en-IN', {
     style: 'currency',
-    currency: 'USD',
+    currency: 'INR',
     maximumFractionDigits: 0,
-  }).format(price);
+  }).format(inrPrice);
 
   const handleContactAgent = () => {
     setShowContactForm(true);
   };
 
   // Combine main image with additional images
-  const allImages = [image, ...images].filter(Boolean);
+  const allImages = [image, ...propertyImages].filter(Boolean);
 
   return (
     <div className="fixed inset-0 z-50">
@@ -121,18 +128,18 @@ export const PropertyDetailsModal = ({ property, isOpen, onClose }: PropertyDeta
                       <FontAwesomeIcon icon={faBath} className="mr-2 text-primary" /> {bathrooms} Baths
                     </span>
                     <span className="flex items-center">
-                      <FontAwesomeIcon icon={faRulerCombined} className="mr-2 text-primary" /> {area} sq ft
+                      <FontAwesomeIcon icon={faRulerCombined} className="mr-2 text-primary" /> {Math.round(area * 0.092903)} sq m
                     </span>
                   </div>
                   
                   <h4 className="text-lg font-medium text-secondary mb-2">Description</h4>
                   <p className="text-gray-600 mb-4">{description}</p>
                   
-                  {features && features.length > 0 && (
+                  {propertyFeatures.length > 0 && (
                     <>
                       <h4 className="text-lg font-medium text-secondary mb-2">Features</h4>
                       <ul className="grid grid-cols-2 gap-2 text-gray-600 mb-6">
-                        {features.map((feature, index) => (
+                        {propertyFeatures.map((feature, index) => (
                           <li key={index} className="flex items-center">
                             <FontAwesomeIcon icon={faCheck} className="text-primary mr-2" />
                             {feature}

@@ -22,7 +22,7 @@ const Navbar = () => {
             <Link href="/">
               <a className="flex-shrink-0 flex items-center">
                 <FontAwesomeIcon icon={faBuilding} className="text-primary text-2xl mr-2" />
-                <span className="text-xl font-bold text-secondary">EstateAdvisor</span>
+                <span className="text-xl font-bold text-secondary">LandLedger</span>
               </a>
             </Link>
             

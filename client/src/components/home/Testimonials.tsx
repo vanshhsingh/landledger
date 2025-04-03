@@ -6,26 +6,26 @@ const testimonials = [
   {
     id: 1,
     rating: 5,
-    text: "EstateAdvisor helped me find the perfect investment property. Their market knowledge and guidance throughout the process was invaluable.",
-    name: "John Davidson",
+    text: "LandLedger helped me find the perfect investment property. Their market knowledge and guidance throughout the process was invaluable.",
+    name: "Rajesh Patel",
     title: "Property Investor",
-    initials: "JD"
+    initials: "RP"
   },
   {
     id: 2,
     rating: 5,
     text: "Their property management services are top-notch. I no longer worry about my rental properties as they handle everything professionally.",
-    name: "Sarah Miller",
+    name: "Priya Sharma",
     title: "Property Owner",
-    initials: "SM"
+    initials: "PS"
   },
   {
     id: 3,
     rating: 4.5,
-    text: "As a first-time homebuyer, I was nervous about the process. The team at EstateAdvisor made it smooth and stress-free.",
-    name: "Robert Lee",
+    text: "As a first-time homebuyer, I was nervous about the process. The team at LandLedger made it smooth and stress-free.",
+    name: "Vikram Mehta",
     title: "Homeowner",
-    initials: "RL"
+    initials: "VM"
   }
 ];
 

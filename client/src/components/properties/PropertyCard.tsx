@@ -26,11 +26,14 @@ const PropertyCard = ({ property, onClick, featured }: PropertyCardProps) => {
     isNew,
   } = property;
 
-  const formattedPrice = new Intl.NumberFormat('en-US', {
+  // Convert USD to INR (approximation - 1 USD = 75 INR)
+  const inrPrice = price * 75;
+  
+  const formattedPrice = new Intl.NumberFormat('en-IN', {
     style: 'currency',
-    currency: 'USD',
+    currency: 'INR',
     maximumFractionDigits: 0,
-  }).format(price);
+  }).format(inrPrice);
 
   return (
     <div 
@@ -73,7 +76,7 @@ const PropertyCard = ({ property, onClick, featured }: PropertyCardProps) => {
               <FontAwesomeIcon icon={faBath} className="mr-2" /> {bathrooms}
             </span>
             <span className="flex items-center text-gray-500">
-              <FontAwesomeIcon icon={faRulerCombined} className="mr-2" /> {area} sq ft
+              <FontAwesomeIcon icon={faRulerCombined} className="mr-2" /> {Math.round(area * 0.092903)} sq m
             </span>
           </div>
         </div>
