@@ -5,7 +5,8 @@ import {
   faKey, 
   faChartBar, 
   faUserTie, 
-  faSearchDollar 
+  faSearchDollar,
+  faCheck
 } from "@fortawesome/free-solid-svg-icons";
 import CallToAction from "../components/home/CallToAction";
 

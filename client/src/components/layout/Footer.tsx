@@ -48,11 +48,11 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><Link href="/"><a className="text-gray-400 hover:text-white">Home</a></Link></li>
-              <li><Link href="/properties"><a className="text-gray-400 hover:text-white">Properties</a></Link></li>
-              <li><Link href="/services"><a className="text-gray-400 hover:text-white">Services</a></Link></li>
-              <li><Link href="/about"><a className="text-gray-400 hover:text-white">About Us</a></Link></li>
-              <li><Link href="/contact"><a className="text-gray-400 hover:text-white">Contact</a></Link></li>
+              <li><Link href="/" className="text-gray-400 hover:text-white">Home</Link></li>
+              <li><Link href="/properties" className="text-gray-400 hover:text-white">Properties</Link></li>
+              <li><Link href="/services" className="text-gray-400 hover:text-white">Services</Link></li>
+              <li><Link href="/about" className="text-gray-400 hover:text-white">About Us</Link></li>
+              <li><Link href="/contact" className="text-gray-400 hover:text-white">Contact</Link></li>
             </ul>
           </div>
 
@@ -60,11 +60,11 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
-              <li><Link href="/services#property-management"><a className="text-gray-400 hover:text-white">Property Management</a></Link></li>
-              <li><Link href="/services#investment-advisory"><a className="text-gray-400 hover:text-white">Investment Advisory</a></Link></li>
-              <li><Link href="/services#buying-selling"><a className="text-gray-400 hover:text-white">Buying & Selling</a></Link></li>
-              <li><Link href="/services#market-analysis"><a className="text-gray-400 hover:text-white">Market Analysis</a></Link></li>
-              <li><Link href="/services#consultation"><a className="text-gray-400 hover:text-white">Consultation</a></Link></li>
+              <li><Link href="/services#property-management" className="text-gray-400 hover:text-white">Property Management</Link></li>
+              <li><Link href="/services#investment-advisory" className="text-gray-400 hover:text-white">Investment Advisory</Link></li>
+              <li><Link href="/services#buying-selling" className="text-gray-400 hover:text-white">Buying & Selling</Link></li>
+              <li><Link href="/services#market-analysis" className="text-gray-400 hover:text-white">Market Analysis</Link></li>
+              <li><Link href="/services#consultation" className="text-gray-400 hover:text-white">Consultation</Link></li>
             </ul>
           </div>
 
