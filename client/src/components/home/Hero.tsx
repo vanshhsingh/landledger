@@ -19,15 +19,11 @@ const Hero = () => {
             Professional advisory services and property management solutions tailored to your needs.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
-            <Link href="/properties">
-              <a className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-blue-700">
-                View Properties
-              </a>
+            <Link href="/properties" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-blue-700">
+              View Properties
             </Link>
-            <Link href="/services">
-              <a className="inline-flex items-center justify-center px-5 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-white hover:bg-opacity-10">
-                Our Services
-              </a>
+            <Link href="/services" className="inline-flex items-center justify-center px-5 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-white hover:bg-opacity-10">
+              Our Services
             </Link>
           </div>
         </div>

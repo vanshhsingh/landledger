@@ -9,10 +9,8 @@ const CallToAction = () => {
           Contact our team of experts to discuss your real estate needs today.
         </p>
         <div className="mt-8 flex justify-center">
-          <Link href="/contact">
-            <a className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-primary bg-white hover:bg-blue-50">
-              Contact Us
-            </a>
+          <Link href="/contact" className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-primary bg-white hover:bg-blue-50">
+            Contact Us
           </Link>
         </div>
       </div>
