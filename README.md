@@ -1,72 +1,67 @@
-# LandLedger - Real Estate Advisory & Management Platform for India
+# LandLedger - Real Estate Platform
 
-LandLedger is a comprehensive real estate platform designed specifically for the Indian market, helping users find properties, get expert real estate advice, and manage their real estate assets. This web application provides property listings, search functionality, and easy contact options for prospective clients throughout India.
+A comprehensive React-based real estate platform designed to simplify property discovery, management, and advisory services for the Indian market.
 
-![LandLedger Screenshot](https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80)
+## Key Features
 
-## Features
+- **Interactive Property Listings**: Browse through a wide range of properties with detailed information
+- **Advanced Search Functionality**: Filter properties based on location, type, price range, and more
+- **User-friendly Inquiry Management**: Easily send inquiries about properties of interest
+- **AI-powered Chatbot**: Get instant answers to your real estate questions with our intelligent assistant
+- **Responsive Design**: Enjoy a seamless experience across desktop, tablet, and mobile devices
+- **Dark Mode Support**: Choose between light and dark themes based on your preference
 
-- **Property Listings**: Browse through a collection of featured and all available properties
-- **Advanced Search**: Filter properties by location, type, price range, and number of bedrooms
-- **Property Details**: View comprehensive information about each property including features, images, and specifications
-- **Service Information**: Learn about various real estate services offered
-- **Contact Forms**: Multiple ways to get in touch with real estate professionals
-- **Responsive Design**: Fully responsive layout that works on desktop, tablet, and mobile devices
+## Tech Stack
 
-## Technologies Used
-
-- **Frontend**:
-  - React 18.x
-  - TypeScript
-  - React Router DOM 7.x
-  - TailwindCSS for styling
-  - FontAwesome icons
-  - React Query for data fetching
-  - React Hook Form for form handling
-
-- **Backend**:
-  - Node.js with Express
-  - In-memory data storage (can be extended to use a database)
+- **Frontend**: React, TypeScript, Tailwind CSS, Shadcn UI
+- **Backend**: Express.js, Node.js
+- **State Management**: React Query
+- **AI Integration**: OpenAI API
+- **Styling**: Tailwind CSS with customizable themes
 
 ## Getting Started
 
-### Prerequisites
-
-- Node.js (v16 or later recommended)
-- npm or yarn
-
 ### Installation
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/landledger.git
-   cd landledger
-   ```
-
+1. Clone the repository
 2. Install dependencies:
-   ```bash
+   ```
    npm install
-   # or
-   yarn install
    ```
 
-3. Start the development server:
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   ```
+### Running Locally
 
-4. Open your browser and navigate to:
-   ```
-   http://localhost:5000
-   ```
+```
+npm run dev
+```
 
-### Building for Production
+This will start both the frontend and backend servers concurrently.
 
-To create a production build:
+### Environment Variables
 
-```bash
-npm run build
-# or
-yarn build
+Create a `.env` file in the root directory with the following variables:
+
+```
+OPENAI_API_KEY=your_openai_api_key (optional for enhanced chatbot functionality)
+```
+
+## Project Structure
+
+- `/client`: Frontend React application
+  - `/src/components`: Reusable UI components
+  - `/src/pages`: Page components
+  - `/src/hooks`: Custom React hooks
+  - `/src/lib`: Utility functions and configurations
+- `/server`: Backend Express application
+  - `/services`: Service modules (OpenAI, etc.)
+  - `/storage.ts`: Data storage implementation
+  - `/routes.ts`: API route definitions
+- `/shared`: Shared types and schemas
+
+## Deployment
+
+This project is configured for easy deployment on Replit.
+
+## License
+
+MIT
