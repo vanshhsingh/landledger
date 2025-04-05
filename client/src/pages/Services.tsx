@@ -109,10 +109,10 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 dark:bg-gray-900 transition-colors duration-200">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-secondary">How We Can Help You</h2>
-          <p className="mt-4 max-w-3xl mx-auto text-xl text-gray-500">
+          <h2 className="text-3xl font-bold text-secondary dark:text-white">How We Can Help You</h2>
+          <p className="mt-4 max-w-3xl mx-auto text-xl text-gray-500 dark:text-gray-300">
             We offer a wide range of professional services to meet all your real estate needs, from property management to investment advisory.
           </p>
         </div>
@@ -125,17 +125,17 @@ const Services = () => {
               className={`flex flex-col ${index % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'} gap-8`}
             >
               <div className="md:w-1/3 flex justify-center">
-                <div className="h-48 w-48 rounded-full bg-blue-100 flex items-center justify-center">
+                <div className="h-48 w-48 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center transition-colors duration-200">
                   <FontAwesomeIcon icon={service.icon} className="text-primary text-6xl" />
                 </div>
               </div>
               <div className="md:w-2/3">
-                <h3 className="text-2xl font-bold text-secondary mb-4">{service.title}</h3>
-                <p className="text-gray-600 mb-6">{service.description}</p>
-                <h4 className="text-lg font-semibold text-secondary mb-3">What We Offer:</h4>
+                <h3 className="text-2xl font-bold text-secondary dark:text-white mb-4">{service.title}</h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-6">{service.description}</p>
+                <h4 className="text-lg font-semibold text-secondary dark:text-white mb-3">What We Offer:</h4>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-4">
                   {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center text-gray-700">
+                    <li key={idx} className="flex items-center text-gray-700 dark:text-gray-300">
                       <FontAwesomeIcon icon={faCheck} className="text-primary mr-2" />
                       {feature}
                     </li>

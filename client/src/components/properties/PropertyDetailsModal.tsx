@@ -65,12 +65,12 @@ export const PropertyDetailsModal = ({ property, isOpen, onClose }: PropertyDeta
       {/* Modal content */}
       <div className="fixed inset-0 z-10 overflow-y-auto">
         <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
-          <div className="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-4xl sm:p-6">
+          <div className="relative transform overflow-hidden rounded-lg bg-white dark:bg-gray-800 px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-4xl sm:p-6">
             {/* Close button */}
             <div className="absolute right-0 top-0 pr-4 pt-4">
               <button 
                 type="button" 
-                className="rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-primary"
+                className="rounded-md bg-white dark:bg-gray-800 text-gray-400 hover:text-gray-500 dark:hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-primary transition-colors duration-200"
                 onClick={onClose}
               >
                 <span className="sr-only">Close</span>
@@ -80,7 +80,7 @@ export const PropertyDetailsModal = ({ property, isOpen, onClose }: PropertyDeta
             
             {showContactForm ? (
               <div>
-                <h3 className="text-2xl font-semibold text-secondary mb-4">Contact Agent about {title}</h3>
+                <h3 className="text-2xl font-semibold text-secondary dark:text-white mb-4">Contact Agent about {title}</h3>
                 <ContactForm 
                   propertyInquiry={true} 
                   propertyTitle={title}
@@ -113,14 +113,14 @@ export const PropertyDetailsModal = ({ property, isOpen, onClose }: PropertyDeta
                 </div>
                 
                 <div>
-                  <h3 className="text-2xl font-semibold text-secondary mb-2">{title}</h3>
+                  <h3 className="text-2xl font-semibold text-secondary dark:text-white mb-2">{title}</h3>
                   <p className="text-primary text-xl font-bold mb-4">{formattedPrice}</p>
-                  <p className="text-gray-500 mb-4">
+                  <p className="text-gray-500 dark:text-gray-400 mb-4">
                     <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2 text-primary" />
                     {location}
                   </p>
                   
-                  <div className="flex items-center mb-6 text-gray-600">
+                  <div className="flex items-center mb-6 text-gray-600 dark:text-gray-400">
                     <span className="flex items-center mr-6">
                       <FontAwesomeIcon icon={faBed} className="mr-2 text-primary" /> {bedrooms} Beds
                     </span>
@@ -132,13 +132,13 @@ export const PropertyDetailsModal = ({ property, isOpen, onClose }: PropertyDeta
                     </span>
                   </div>
                   
-                  <h4 className="text-lg font-medium text-secondary mb-2">Description</h4>
-                  <p className="text-gray-600 mb-4">{description}</p>
+                  <h4 className="text-lg font-medium text-secondary dark:text-white mb-2">Description</h4>
+                  <p className="text-gray-600 dark:text-gray-300 mb-4">{description}</p>
                   
                   {propertyFeatures.length > 0 && (
                     <>
-                      <h4 className="text-lg font-medium text-secondary mb-2">Features</h4>
-                      <ul className="grid grid-cols-2 gap-2 text-gray-600 mb-6">
+                      <h4 className="text-lg font-medium text-secondary dark:text-white mb-2">Features</h4>
+                      <ul className="grid grid-cols-2 gap-2 text-gray-600 dark:text-gray-300 mb-6">
                         {propertyFeatures.map((feature, index) => (
                           <li key={index} className="flex items-center">
                             <FontAwesomeIcon icon={faCheck} className="text-primary mr-2" />
@@ -156,7 +156,7 @@ export const PropertyDetailsModal = ({ property, isOpen, onClose }: PropertyDeta
                     >
                       <FontAwesomeIcon icon={faPhoneAlt} className="mr-2" /> Contact Agent
                     </button>
-                    <button className="flex-1 border border-primary text-primary px-4 py-2 rounded-md hover:bg-blue-50">
+                    <button className="flex-1 border border-primary text-primary dark:text-blue-400 px-4 py-2 rounded-md hover:bg-blue-50 dark:hover:bg-blue-900 transition-colors duration-200">
                       <FontAwesomeIcon icon={faCalendarAlt} className="mr-2" /> Schedule Tour
                     </button>
                   </div>

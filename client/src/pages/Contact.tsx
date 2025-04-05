@@ -19,10 +19,10 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 dark:bg-gray-900 transition-colors duration-200">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           <div className="md:col-span-2">
-            <h2 className="text-2xl font-bold text-secondary mb-6">Get in Touch</h2>
+            <h2 className="text-2xl font-bold text-secondary dark:text-white mb-6">Get in Touch</h2>
             
             <div className="space-y-6">
               <div className="flex items-start">
@@ -32,8 +32,8 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-lg font-medium text-secondary">Our Office</h3>
-                  <p className="mt-1 text-gray-600">
+                  <h3 className="text-lg font-medium text-secondary dark:text-white">Our Office</h3>
+                  <p className="mt-1 text-gray-600 dark:text-gray-300">
                     765 Park Avenue<br />
                     Mumbai, Maharashtra 400001<br />
                     India
@@ -48,8 +48,8 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-lg font-medium text-secondary">Phone</h3>
-                  <p className="mt-1 text-gray-600">
+                  <h3 className="text-lg font-medium text-secondary dark:text-white">Phone</h3>
+                  <p className="mt-1 text-gray-600 dark:text-gray-300">
                     Main: +91 98765 43210<br />
                     Toll-free: 1800 102 4567
                   </p>
@@ -63,8 +63,8 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-lg font-medium text-secondary">Email</h3>
-                  <p className="mt-1 text-gray-600">
+                  <h3 className="text-lg font-medium text-secondary dark:text-white">Email</h3>
+                  <p className="mt-1 text-gray-600 dark:text-gray-300">
                     General: info@landledger.com<br />
                     Support: support@landledger.com
                   </p>
@@ -78,8 +78,8 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-lg font-medium text-secondary">Business Hours</h3>
-                  <p className="mt-1 text-gray-600">
+                  <h3 className="text-lg font-medium text-secondary dark:text-white">Business Hours</h3>
+                  <p className="mt-1 text-gray-600 dark:text-gray-300">
                     Monday to Friday: 10:00 AM - 6:00 PM<br />
                     Saturday: 10:00 AM - 2:00 PM<br />
                     Sunday: Closed
@@ -89,7 +89,7 @@ const Contact = () => {
             </div>
             
             <div className="mt-8">
-              <h3 className="text-lg font-medium text-secondary mb-4">Connect With Us</h3>
+              <h3 className="text-lg font-medium text-secondary dark:text-white mb-4">Connect With Us</h3>
               <div className="flex space-x-4">
                 <a href="#" className="h-10 w-10 rounded-full bg-[#3b5998] flex items-center justify-center text-white">
                   <i className="fab fa-facebook-f"></i>
@@ -107,15 +107,15 @@ const Contact = () => {
             </div>
           </div>
           
-          <div className="md:col-span-3 bg-white p-8 rounded-lg shadow-sm">
-            <h2 className="text-2xl font-bold text-secondary mb-6">Send Us a Message</h2>
+          <div className="md:col-span-3 bg-white dark:bg-gray-800 p-8 rounded-lg shadow-sm transition-colors duration-200">
+            <h2 className="text-2xl font-bold text-secondary dark:text-white mb-6">Send Us a Message</h2>
             <ContactForm />
           </div>
         </div>
         
         <div className="mt-12">
-          <h2 className="text-2xl font-bold text-secondary mb-6">Visit Our Office</h2>
-          <div className="h-96 bg-gray-200 rounded-lg overflow-hidden">
+          <h2 className="text-2xl font-bold text-secondary dark:text-white mb-6">Visit Our Office</h2>
+          <div className="h-96 bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden transition-colors duration-200">
             {/* Embed a map here */}
             <div className="w-full h-full">
               <iframe 

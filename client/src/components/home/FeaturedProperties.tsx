@@ -24,24 +24,24 @@ const FeaturedProperties = () => {
 
   if (isLoading) {
     return (
-      <section className="py-12 bg-neutral-50">
+      <section className="py-12 bg-neutral-50 dark:bg-gray-900 transition-colors duration-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-3xl font-bold text-secondary">Featured Properties</h2>
-            <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
+            <h2 className="text-3xl font-bold text-secondary dark:text-white">Featured Properties</h2>
+            <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-500 dark:text-gray-400">
               Loading featured properties...
             </p>
           </div>
           <div className="mt-10 grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
             {[1, 2, 3].map((i) => (
-              <div key={i} className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div key={i} className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
                 <div className="animate-pulse">
-                  <div className="relative pb-[60%] bg-gray-300"></div>
+                  <div className="relative pb-[60%] bg-gray-300 dark:bg-gray-700"></div>
                   <div className="p-6">
-                    <div className="h-6 bg-gray-300 rounded w-3/4 mb-4"></div>
-                    <div className="h-4 bg-gray-300 rounded w-1/2 mb-4"></div>
-                    <div className="h-4 bg-gray-300 rounded w-full mb-4"></div>
-                    <div className="h-10 bg-gray-300 rounded w-1/3 mt-4"></div>
+                    <div className="h-6 bg-gray-300 dark:bg-gray-700 rounded w-3/4 mb-4"></div>
+                    <div className="h-4 bg-gray-300 dark:bg-gray-700 rounded w-1/2 mb-4"></div>
+                    <div className="h-4 bg-gray-300 dark:bg-gray-700 rounded w-full mb-4"></div>
+                    <div className="h-10 bg-gray-300 dark:bg-gray-700 rounded w-1/3 mt-4"></div>
                   </div>
                 </div>
               </div>
@@ -54,10 +54,10 @@ const FeaturedProperties = () => {
 
   if (error) {
     return (
-      <section className="py-12 bg-neutral-50">
+      <section className="py-12 bg-neutral-50 dark:bg-gray-900 transition-colors duration-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-3xl font-bold text-secondary">Featured Properties</h2>
+            <h2 className="text-3xl font-bold text-secondary dark:text-white">Featured Properties</h2>
             <p className="mt-4 max-w-2xl mx-auto text-xl text-red-500">
               Error loading properties. Please try again later.
             </p>
@@ -68,11 +68,11 @@ const FeaturedProperties = () => {
   }
 
   return (
-    <section className="py-12 bg-neutral-50">
+    <section className="py-12 bg-neutral-50 dark:bg-gray-900 transition-colors duration-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-secondary">Featured Properties</h2>
-          <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
+          <h2 className="text-3xl font-bold text-secondary dark:text-white">Featured Properties</h2>
+          <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-500 dark:text-gray-400">
             Discover our hand-picked selection of premium properties.
           </p>
         </div>
@@ -89,7 +89,7 @@ const FeaturedProperties = () => {
 
           {(!properties || properties.length === 0) && (
             <div className="col-span-3 text-center py-10">
-              <p className="text-gray-500">No featured properties available at the moment.</p>
+              <p className="text-gray-500 dark:text-gray-400">No featured properties available at the moment.</p>
             </div>
           )}
         </div>

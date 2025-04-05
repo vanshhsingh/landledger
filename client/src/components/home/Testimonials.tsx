@@ -51,31 +51,31 @@ const RatingStars = ({ rating }: { rating: number }) => {
 
 const Testimonials = () => {
   return (
-    <section className="py-12 bg-white">
+    <section className="py-12 bg-white dark:bg-gray-900 transition-colors duration-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-secondary">What Our Clients Say</h2>
-          <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
+          <h2 className="text-3xl font-bold text-secondary dark:text-white">What Our Clients Say</h2>
+          <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-500 dark:text-gray-400">
             Don't just take our word for it — hear from some of our satisfied clients.
           </p>
         </div>
 
         <div className="mt-10 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((testimonial) => (
-            <div key={testimonial.id} className="bg-neutral-50 p-6 rounded-lg border border-neutral-200 testimonial-card">
+            <div key={testimonial.id} className="bg-neutral-50 dark:bg-gray-800 p-6 rounded-lg border border-neutral-200 dark:border-gray-700 testimonial-card">
               <div className="flex items-center mb-4">
                 <RatingStars rating={testimonial.rating} />
               </div>
-              <blockquote className="text-gray-700 italic">
+              <blockquote className="text-gray-700 dark:text-gray-300 italic">
                 "{testimonial.text}"
               </blockquote>
               <div className="mt-4 flex items-center">
-                <div className="h-10 w-10 rounded-full bg-gray-300 flex items-center justify-center">
-                  <span className="text-gray-600 font-medium">{testimonial.initials}</span>
+                <div className="h-10 w-10 rounded-full bg-gray-300 dark:bg-gray-600 flex items-center justify-center">
+                  <span className="text-gray-600 dark:text-gray-200 font-medium">{testimonial.initials}</span>
                 </div>
                 <div className="ml-3">
-                  <p className="text-sm font-medium text-secondary">{testimonial.name}</p>
-                  <p className="text-sm text-gray-500">{testimonial.title}</p>
+                  <p className="text-sm font-medium text-secondary dark:text-white">{testimonial.name}</p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">{testimonial.title}</p>
                 </div>
               </div>
             </div>

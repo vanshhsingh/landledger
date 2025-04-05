@@ -55,37 +55,37 @@ const Properties = () => {
         <SearchFilters />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 dark:bg-gray-900 transition-colors duration-200">
         <div className="mb-8">
-          <h2 className="text-2xl font-bold text-secondary">
+          <h2 className="text-2xl font-bold text-secondary dark:text-white">
             {isLoading ? 'Loading Properties...' : 
              error ? 'Error Loading Properties' : 
              properties?.length === 0 ? 'No Properties Found' : 
              `${properties?.length} Properties Found`}
           </h2>
           {!isLoading && !error && properties?.length === 0 && (
-            <p className="text-gray-500 mt-2">Try adjusting your filters to see more results.</p>
+            <p className="text-gray-500 dark:text-gray-400 mt-2">Try adjusting your filters to see more results.</p>
           )}
         </div>
 
         {isLoading ? (
           <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
             {[1, 2, 3, 4, 5, 6].map((i) => (
-              <div key={i} className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div key={i} className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-colors duration-200">
                 <div className="animate-pulse">
-                  <div className="relative pb-[60%] bg-gray-300"></div>
+                  <div className="relative pb-[60%] bg-gray-300 dark:bg-gray-700 transition-colors duration-200"></div>
                   <div className="p-6">
-                    <div className="h-6 bg-gray-300 rounded w-3/4 mb-4"></div>
-                    <div className="h-4 bg-gray-300 rounded w-1/2 mb-4"></div>
-                    <div className="h-4 bg-gray-300 rounded w-full mb-4"></div>
-                    <div className="h-10 bg-gray-300 rounded w-1/3 mt-4"></div>
+                    <div className="h-6 bg-gray-300 dark:bg-gray-700 rounded w-3/4 mb-4 transition-colors duration-200"></div>
+                    <div className="h-4 bg-gray-300 dark:bg-gray-700 rounded w-1/2 mb-4 transition-colors duration-200"></div>
+                    <div className="h-4 bg-gray-300 dark:bg-gray-700 rounded w-full mb-4 transition-colors duration-200"></div>
+                    <div className="h-10 bg-gray-300 dark:bg-gray-700 rounded w-1/3 mt-4 transition-colors duration-200"></div>
                   </div>
                 </div>
               </div>
             ))}
           </div>
         ) : error ? (
-          <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded">
+          <div className="bg-red-50 dark:bg-red-900 border border-red-200 dark:border-red-800 text-red-700 dark:text-red-300 px-4 py-3 rounded transition-colors duration-200">
             <p>There was an error loading properties. Please try again later.</p>
           </div>
         ) : (

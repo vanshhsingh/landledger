@@ -2,21 +2,21 @@ import { Link } from "wouter";
 
 const Hero = () => {
   return (
-    <section className="relative bg-secondary overflow-hidden">
+    <section className="relative bg-secondary dark:bg-gray-900 overflow-hidden">
       <div className="absolute inset-0 z-0">
         <div 
           className="w-full h-full bg-cover bg-center opacity-20"
           style={{ backgroundImage: "url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80')" }}
           aria-hidden="true"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-secondary via-secondary/90 to-secondary/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-secondary via-secondary/90 to-secondary/70 dark:from-gray-900 dark:via-gray-900/90 dark:to-gray-900/70"></div>
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-16 sm:py-24 md:py-28 lg:py-32">
         <div className="max-w-2xl">
-          <h1 className="text-white text-shadow-lg">
+          <h1 className="text-white text-shadow-lg dark:text-shadow-lg-dark">
             Find Your Dream Property with Expert Guidance
           </h1>
-          <p className="mt-4 text-lg text-white text-shadow-sm">
+          <p className="mt-4 text-lg text-white text-shadow-sm dark:text-shadow-sm-dark">
             Professional advisory services and property management solutions tailored to your needs.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4">

@@ -44,18 +44,18 @@ const SearchFilters = () => {
   };
 
   return (
-    <section className="bg-white shadow-md rounded-lg max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 relative z-20">
+    <section className="bg-white dark:bg-gray-800 shadow-md rounded-lg max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 relative z-20 transition-colors duration-200">
       <div className="py-6">
-        <h2 className="text-lg font-medium text-secondary mb-4">Find Your Perfect Property</h2>
+        <h2 className="text-lg font-medium text-secondary dark:text-white mb-4">Find Your Perfect Property</h2>
         <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
           <div>
-            <label htmlFor="location" className="block text-sm font-medium text-gray-700">Location</label>
+            <label htmlFor="location" className="block text-sm font-medium text-gray-700 dark:text-gray-300">Location</label>
             <select 
               id="location" 
               name="location" 
               value={formData.location}
               onChange={handleChange}
-              className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-primary focus:border-primary sm:text-sm rounded-md"
+              className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-primary focus:border-primary sm:text-sm rounded-md"
             >
               <option>All Locations</option>
               <option>New York</option>
@@ -65,13 +65,13 @@ const SearchFilters = () => {
             </select>
           </div>
           <div>
-            <label htmlFor="propertyType" className="block text-sm font-medium text-gray-700">Property Type</label>
+            <label htmlFor="propertyType" className="block text-sm font-medium text-gray-700 dark:text-gray-300">Property Type</label>
             <select 
               id="propertyType" 
               name="propertyType" 
               value={formData.propertyType}
               onChange={handleChange}
-              className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-primary focus:border-primary sm:text-sm rounded-md"
+              className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-primary focus:border-primary sm:text-sm rounded-md"
             >
               <option>All Types</option>
               <option>Apartment</option>
@@ -81,13 +81,13 @@ const SearchFilters = () => {
             </select>
           </div>
           <div>
-            <label htmlFor="priceRange" className="block text-sm font-medium text-gray-700">Price Range</label>
+            <label htmlFor="priceRange" className="block text-sm font-medium text-gray-700 dark:text-gray-300">Price Range</label>
             <select 
               id="priceRange" 
               name="priceRange" 
               value={formData.priceRange}
               onChange={handleChange}
-              className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-primary focus:border-primary sm:text-sm rounded-md"
+              className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-primary focus:border-primary sm:text-sm rounded-md"
             >
               <option>Any Price</option>
               <option>$100k - $200k</option>
@@ -97,13 +97,13 @@ const SearchFilters = () => {
             </select>
           </div>
           <div>
-            <label htmlFor="bedrooms" className="block text-sm font-medium text-gray-700">Bedrooms</label>
+            <label htmlFor="bedrooms" className="block text-sm font-medium text-gray-700 dark:text-gray-300">Bedrooms</label>
             <select 
               id="bedrooms" 
               name="bedrooms" 
               value={formData.bedrooms}
               onChange={handleChange}
-              className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-primary focus:border-primary sm:text-sm rounded-md"
+              className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-primary focus:border-primary sm:text-sm rounded-md"
             >
               <option>Any</option>
               <option>1+</option>
