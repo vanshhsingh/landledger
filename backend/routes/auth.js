@@ -8,7 +8,9 @@ const bcrypt = require('bcrypt');
 const router = express.Router()
 const jwt = require('jsonwebtoken');
 
-const JWT_SECRET = 'Vanshisagoodboy123';
+dotenv.config(); // Load environment variables
+
+const JWT_SECRET = process.env.JWT_SECRET; // Use .env secret
 
 //ROUTE 1: Creating user using : POST "/api/auth/createuser"
 router.post('/createuser',[

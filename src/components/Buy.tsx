@@ -104,7 +104,9 @@ export default function Buy() {
                     alt={property.name} 
                     className="PropertyImage" 
                   />
+                  <div className="property-name">
                       <h3>{property.name}</h3>
+                  </div>
                       <p>{property.location}</p>
                       <p className="price">{property.price}</p>
                       <p>{property.size} | {property.bedrooms} BHK | {property.bathrooms} Bath</p>

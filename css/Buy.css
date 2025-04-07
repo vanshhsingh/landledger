@@ -236,3 +236,7 @@ body{
   opacity: 1;
   transform: translateY(0); /* Slide up to original position */
 }
+
+.property-name{
+  height: 5%;
+}
