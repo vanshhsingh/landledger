@@ -58,9 +58,6 @@ OPENAI_API_KEY=your_openai_api_key (optional for enhanced chatbot functionality)
   - `/routes.ts`: API route definitions
 - `/shared`: Shared types and schemas
 
-## Deployment
-
-This project is configured for easy deployment on Replit.
 
 ## License
 
