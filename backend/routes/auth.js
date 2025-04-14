@@ -7,6 +7,7 @@ const {Schema} = mongoose;
 const bcrypt = require('bcrypt');
 const router = express.Router()
 const jwt = require('jsonwebtoken');
+const dotenv = require('dotenv');
 
 dotenv.config(); // Load environment variables
 
@@ -24,7 +25,7 @@ router.post('/createuser',[
    if (result.isEmpty()) {
       let user = await User.findOne({username:req.body.username})
       if(user){
-         return res.status(400).json({error: "Username already exists."})
+         return res.status(400).json({error: "Username already exists"})
       }else{
          user = await User.create({
             name:req.body.name,

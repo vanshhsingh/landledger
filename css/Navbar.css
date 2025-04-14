@@ -101,7 +101,7 @@ body {
 }
 
 /* Animated Hover Effects */
-.login-btn {
+.login-btn, .signup-btn {
     background-color: transparent;
     color: var(--nav-text);
     border: 2px solid var(--nav-text);
@@ -109,7 +109,7 @@ body {
     overflow: hidden;
 }
 
-.login-btn::after {
+.login-btn::after, .signup-btn::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -121,16 +121,16 @@ body {
     z-index: -1;
 }
 
-.login-btn:hover {
+.login-btn:hover, .signup-btn:hover {
     color: var(--nav-color);
 }
 
-.login-btn:hover::after {
+.login-btn:hover::after , .signup-btn:hover::after {
     left: 0;
 }
 
 /* Signup Button with Gradient Effect */
-.signup-btn {
+/* .signup-btn {
     background: linear-gradient(135deg, #007bff, #0056b3);
     color: white;
     border: none;
@@ -141,7 +141,7 @@ body {
 .signup-btn:hover {
     opacity: 0.8;
     transform: scale(1.05);
-}
+} */
 
 /* ✅ Logout Button */
 .logout-btn {

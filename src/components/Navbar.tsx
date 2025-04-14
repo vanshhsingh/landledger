@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { getUser, logout } from "../services/authService";
 import "../../css/Navbar.css";
@@ -26,31 +26,29 @@ export default function Navbar() {
       navigate("/login"); // ✅ Redirect to login page
     };
   return (
-    <div className="container">
-      <div className="navbar">
-        <a href="/" id="homebutt">LandLedger</a>
-        <nav>
-          <ul>
-            <li><Link to="/buy">Buy</Link></li>
-            <li><Link to="/sell">Sell</Link></li>
-            <li><Link to="/loans">Marketplace</Link></li>
-            <li><Link to="/wishlist">Wishlist</Link></li>
-            <li><Link to="/listings">My Listings</Link></li>
-            <li><Link to="/profile">Profile</Link></li>
-          </ul>
+    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
+      <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <Link to="/" className="text-2xl font-bold text-blue-600">LandLedger</Link>
+        <nav className="hidden md:flex gap-6 text-gray-700 font-medium">
+          <Link to="/buy" className="hover:text-blue-600 transition">Buy</Link>
+          <Link to="/sell" className="hover:text-blue-600 transition">Sell</Link>
+          <Link to="/marketplace" className="hover:text-blue-600 transition">Marketplace</Link>
+          <Link to="/wishlist" className="hover:text-blue-600 transition">Wishlist</Link>
+          <Link to="/listings" className="hover:text-blue-600 transition">My Listings</Link>
+          <Link to="/profile" className="hover:text-blue-600 transition">Profile</Link>
         </nav>
-        <div className="auth-buttons">
-        {!isAuthenticated ? (
-              <>
-                <li><Link to="/login" className="login-btn">Login</Link></li>
-                <li><Link to="/signup" className="signup-btn">Signup</Link></li>
-              </>
-            ) : (
-              // Show Logout if logged in
-              <li><button className="logout-btn" onClick={handleLogout}>Logout</button></li>
-            )}
+        <div className="flex gap-4 items-center">
+          {isAuthenticated ? (
+            <button onClick={handleLogout} className="text-sm px-4 py-2 rounded-md border border-red-500 text-red-500 hover:bg-red-50">Logout</button>
+          ):(
+            <>
+            <Link to="/login" className="text-sm px-4 py-2 rounded-md border border-blue-500 text-blue-500 hover:bg-blue-50">Login</Link>
+            <Link to="/signup" className="text-sm px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700">Signup</Link>
+            </>
+            
+          )}
         </div>
       </div>
-    </div>
+    </header>
   );
 }
