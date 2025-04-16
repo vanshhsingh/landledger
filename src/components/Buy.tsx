@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
-import { useNavigate , Link} from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 import propertyData from './Dummy data/data.json';
+import {addwishlist} from '../services/wishlistService';
+
 
 export default function Buy() {
   const navigate = useNavigate();
@@ -14,7 +16,16 @@ export default function Buy() {
     bedrooms: number;
     bathrooms: number;
   }
-
+  const handleAdd = async (propertyid : number) => {
+    try {
+      console.log(propertyid);
+      console.log(properties[propertyid]);
+      const result = await addwishlist(properties[propertyid]); // `property` is an object
+      console.log("Added to wishlist", result);
+    } catch (error) {
+      console.error("Error adding to wishlist", error);
+    }
+  };
   const [properties, setProperties] = useState<Property[]>([]);
 
   useEffect(() => {
@@ -25,7 +36,7 @@ export default function Buy() {
     <main className="mt-10 min-h-screen bg-gradient-to-br from-gray-50 to-white">
 
       <section className=" max-w-7xl mx-auto px-6 pb-24">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 ">
           {properties.map((property) => (
             <div
               key={property.id}
@@ -37,7 +48,7 @@ export default function Buy() {
                 className="w-full h-60 object-cover rounded-t-3xl group-hover:scale-105 transition-transform duration-300"
               />
               <div className="p-6">
-                <h3 className="text-2xl font-semibold text-gray-900 mb-1">{property.name}</h3>
+                <h3 className="text-2xl font-semibold text-gray-900 mb-1 h-16">{property.name}</h3>
                 <p className="text-sm text-gray-500 mb-2">{property.location}</p>
                 <p className="text-indigo-600 font-bold text-xl mb-2">{property.price}</p>
                 <p className="text-gray-600 text-sm mb-4">{property.size} · {property.bedrooms} BHK · {property.bathrooms} Bath</p>
@@ -46,6 +57,13 @@ export default function Buy() {
                   className="w-full py-3 bg-indigo-600 text-white rounded-xl hover:bg-indigo-700 transition-all"
                 >
                   View Details
+                </button>
+                <button
+                  key={property.id}
+                  onClick={() => handleAdd(property.id)}
+                  className="w-full py-3 bg-indigo-600 text-white rounded-xl hover:bg-indigo-700 transition-all mt-4"
+                >
+                  add Wishlist
                 </button>
               </div>
             </div>

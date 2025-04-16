@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const fetchuser = require('../middleware/fetchuser');
 const Wishlist = require('../models/Wishlist');
-
+const { body, validationResult } = require('express-validator');
 
 router.get('/fetchWishlist', fetchuser, async (req, res) => {
   try {
@@ -28,6 +28,7 @@ router.post(
     body('bathrooms').isInt({ min: 0 }).withMessage('Bathrooms must be a non-negative number'),
   ],
   async (req, res) => {
+    console.log('request body: ', req.body);
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       return res.status(400).json({ errors: errors.array() });

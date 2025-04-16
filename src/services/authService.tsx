@@ -1,7 +1,7 @@
 const API_URL = "http://localhost:5000/api/auth";
 
 interface UserData {
-    name?: string;
+    name?: string;  
     username: string;
     password: string;
 }

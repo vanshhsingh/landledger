@@ -10,6 +10,7 @@ app.use(express.json());
 
 // Available Routes
 app.use('/api/auth', require('./routes/auth'));
+app.use('/api/wishlist', require('./routes/wishlist'));
 
 // Connect to MongoDB
 connectToMongo();

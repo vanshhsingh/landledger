@@ -33,14 +33,31 @@ export default function Home() {
     <section className="bg-gray-100 py-16">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <h2 className="text-3xl font-bold text-gray-800 mb-6">Explore Popular Cities</h2>
-        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
-          {['Mumbai', 'Delhi', 'Bangalore', 'Hyderabad'].map(city => (
-            <div key={city} className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
-              <img src={`https://source.unsplash.com/300x200/?${city},city`} alt={city} className="w-full h-32 object-cover rounded-md mb-4" />
-              <h3 className="text-lg font-semibold text-gray-800">{city}</h3>
-            </div>
-          ))}
-        </div>
+        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8 p-4">
+  {['Mumbai', 'Delhi', 'Bangalore', 'Hyderabad'].map((city) => (
+    <div
+      key={city}
+      className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden"
+    >
+      <div className="overflow-hidden">
+        <img
+          src={`img/${city}.webp`}
+          alt={city}
+          onError={(e) => {
+            (e.target as HTMLImageElement).src = 'img/placeholder.webp';
+          }}
+          className="w-full h-48 object-cover transform group-hover:scale-105 transition duration-300"
+        />
+      </div>
+      <div className="text-center py-4">
+        <h3 className="text-xl font-semibold text-gray-800 group-hover:text-indigo-600 transition">
+          {city}
+        </h3>
+      </div>
+    </div>
+  ))}
+</div>
+
       </div>
     </section>
 
