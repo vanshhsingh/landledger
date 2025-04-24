@@ -36,6 +36,7 @@ export default function Navbar() {
           <Link to="/wishlist" className="hover:text-blue-600 transition">Wishlist</Link>
           <Link to="/listings" className="hover:text-blue-600 transition">My Listings</Link>
           <Link to="/profile" className="hover:text-blue-600 transition">Profile</Link>
+          <Link to="/aipredict" className="hover:text-blue-600 transition">AI Prediction</Link>
         </nav>
         <div className="flex gap-4 items-center">
           {isAuthenticated ? (

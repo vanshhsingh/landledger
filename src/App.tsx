@@ -12,6 +12,9 @@ import Listings from './components/Listings';
 import Profile from './components/Profile';
 import SignupPage from './components/auth/Signup';
 import ProtectedRoute from './components/auth/ProtectedRoute';
+import Aiprediction from './components/Aiprediction';
+
+
 const App = () => {
   return (
     <Router>
@@ -61,6 +64,14 @@ const App = () => {
           element={
             <ProtectedRoute>
               <Profile />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/aipredict"
+          element={
+            <ProtectedRoute>
+              <Aiprediction />
             </ProtectedRoute>
           }
         />
