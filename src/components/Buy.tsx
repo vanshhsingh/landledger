@@ -16,11 +16,22 @@ export default function Buy() {
     bedrooms: number;
     bathrooms: number;
   }
+  interface WishlistItem {
+    _id: string;
+    userId: string;
+    property: Property;
+  }
+
   const handleAdd = async (propertyid : number) => {
     try {
       console.log(propertyid);
       console.log(properties[propertyid]);
-      const result = await addwishlist(properties[propertyid]); // `property` is an object
+      const wishlistItem: WishlistItem = {
+        _id: "", // placeholder; backend should generate the real id
+        userId: "", // set current user id here
+        property: properties[propertyid],
+      };
+      const result = await addwishlist(wishlistItem);
       console.log("Added to wishlist", result);
     } catch (error) {
       console.error("Error adding to wishlist", error);
@@ -43,7 +54,7 @@ export default function Buy() {
               className="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all overflow-hidden border border-gray-100 group"
             >
               <img
-                src={"img/houseimage.jpg"}
+                src={"/img/houseimage.jpg"}
                 alt={property.name}
                 className="w-full h-60 object-cover rounded-t-3xl group-hover:scale-105 transition-transform duration-300"
               />

@@ -34,7 +34,7 @@ export default function Home() {
       <div className="max-w-7xl mx-auto px-6 text-center">
         <h2 className="text-3xl font-bold text-gray-800 mb-6">Explore Popular Cities</h2>
         <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8 p-4">
-  {['Mumbai', 'Delhi', 'Bangalore', 'Hyderabad'].map((city) => (
+  {['mumbai', 'delhi', 'bangalore', 'hyderabad'].map((city) => (
     <div
       key={city}
       className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden"

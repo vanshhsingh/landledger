@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { fetchwishlist } from '../services/wishlistService';
-import { useNavigate } from 'react-router-dom';
 
 
 

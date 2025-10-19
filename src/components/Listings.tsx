@@ -1,4 +1,4 @@
-import React from "react";
+
 import "../../css/Listings.css";
 
 export default function Listings() {

@@ -1,15 +1,10 @@
-import React, { useState } from 'react';
+
 import Navbar from './components/Navbar';
 import Buy from './components/Buy';
 import Home from './components/Home';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import PropertyDetails from './components/PropertyDetails';
 import Login from './components/auth/Login';
-import Sell from './components/Sell';
-import Marketplace from './components/Marketplace';
 import Wishlist from './components/Wishlist';
-import Listings from './components/Listings';
-import Profile from './components/Profile';
 import SignupPage from './components/auth/Signup';
 import ProtectedRoute from './components/auth/ProtectedRoute';
 import Aiprediction from './components/Aiprediction';
