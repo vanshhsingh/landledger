@@ -31,11 +31,11 @@ export default function Navbar() {
         <Link to="/" className="text-2xl font-bold text-blue-600">LandLedger</Link>
         <nav className="hidden md:flex gap-6 text-gray-700 font-medium">
           <Link to="/buy" className="hover:text-blue-600 transition">Buy</Link>
-          <Link to="/sell" className="hover:text-blue-600 transition">Sell</Link>
-          <Link to="/marketplace" className="hover:text-blue-600 transition">Marketplace</Link>
+          {/* <Link to="/sell" className="hover:text-blue-600 transition">Sell</Link> */}
+          {/* <Link to="/marketplace" className="hover:text-blue-600 transition">Marketplace</Link> */}
           <Link to="/wishlist" className="hover:text-blue-600 transition">Wishlist</Link>
-          <Link to="/listings" className="hover:text-blue-600 transition">My Listings</Link>
-          <Link to="/profile" className="hover:text-blue-600 transition">Profile</Link>
+          {/* <Link to="/listings" className="hover:text-blue-600 transition">My Listings</Link> */}
+          {/* <Link to="/profile" className="hover:text-blue-600 transition">Profile</Link> */}
           <Link to="/aipredict" className="hover:text-blue-600 transition">AI Prediction</Link>
         </nav>
         <div className="flex gap-4 items-center">

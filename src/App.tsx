@@ -27,14 +27,14 @@ const App = () => {
         <Route path="/signup" element={<SignupPage />} />
 
         {/* Protected Routes */}
-        <Route
+        {/* <Route
           path="/sell"
           element={
             <ProtectedRoute>
               <Sell />
             </ProtectedRoute>
           }
-        />
+        /> */}
         <Route
           path="/wishlist"
           element={
@@ -43,30 +43,30 @@ const App = () => {
             </ProtectedRoute>
           }
         />
-        <Route
+        {/* <Route
           path="/listings"
           element={
             <ProtectedRoute>
               <Listings />
             </ProtectedRoute>
           }
-        />
-        <Route
+        /> */}
+        {/* <Route
           path="/marketplace"
           element={
             <ProtectedRoute>
               <Marketplace />
             </ProtectedRoute>
           }
-        />
-        <Route
+        /> */}
+        {/* <Route
           path="/profile"
           element={
             <ProtectedRoute>
               <Profile />
             </ProtectedRoute>
           }
-        />
+        /> */}
         <Route
           path="/aipredict"
           element={
