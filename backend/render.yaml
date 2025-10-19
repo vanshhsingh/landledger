@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: landledger-backend
+    env: node
+    buildCommand: "npm install"
+    startCommand: "node main.js"
+    envVars:
+      - key: PORT
+        value: 10000
